@@ -1,0 +1,25 @@
+ALGORITHM creat a paragraphe
+
+VAR
+    i:INTEGER;
+    nb word:INTEGER;
+    lenghth:INTEGER;
+    nb voy:INTEGER;
+    st:STRING;
+BEGIN
+    write("the number of characters")
+    read(st)
+    WHILE (st=not'.') DO
+        IF (st[i]=' ') THEN
+            nbword=nbword+1
+        ELSE
+            leng=leng+1
+        END_IF
+        IF (st[i]=='a','e','i','u','o') THEN
+            nbvoy=nbvoy+1
+        END_IF
+    END_WHILE
+    write(nbword);
+    write(leng);
+    write(nbvoy);
+END
